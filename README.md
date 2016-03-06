@@ -1,7 +1,28 @@
 # hmc5883l
 C header only library for the hmc5883l compass sensor on RaspberryPi
 
-## Example
+### Requirements
+* wiringPi library: http://wiringpi.com/
+
+### Functions
+```c
+/* Set error flag in HMC5883L object */
+extern void hmc5883l_error(HMC5883L *hmc5883l, char code);
+
+/* Read raw data from sensor */
+extern void hmc5883l_read(HMC5883L *hmc5883l);
+
+/* Set sensor gain and corresponding scale factor */
+extern void hmc5883l_set_gain(HMC5883L *hmc5883l, unsigned char gain);
+
+/* Self test */
+extern char hmc5883l_self_test(HMC5883L *hmc5883l);
+
+/* Initialize */
+extern char hmc5883l_init(HMC5883L *hmc5883l);
+```
+
+### Usage
 ```c
 #include "hmc5883l/hmc5883l.h"
 
