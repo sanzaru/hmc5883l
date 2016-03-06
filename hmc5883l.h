@@ -1,5 +1,5 @@
 /**
- * 3-Axis Digital Compass IC HMC5883LL hader only library for Raspberry Pi.
+ * 3-Axis Digital Compass IC HMC5883LL header only library for Raspberry Pi.
  *
  * Author: Martin Albrecht
  *
