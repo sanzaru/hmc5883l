@@ -98,12 +98,12 @@ static float _hmc5883l_Gauss_LSB_Z  = 980.0F;
 /* The HMC5883L object */
 typedef struct {
     int _fd,
+        _status,
         _min_delay,
         _max_value,
         _min_value;
 
     unsigned char _gain,
-                  _status,
                   _error;
 
     char _name[12];
@@ -159,7 +159,7 @@ inline void hmc5883l_error(HMC5883L *hmc5883l, char code) {
 
 /* Read status register */
 inline void hmc5883l_status(HMC5883L *hmc5883l) {
-    unsigned char status = 0;
+    int status = 0;
 
     status = wiringPiI2CReadReg8(hmc5883l->_fd, HMC5883L_REGISTER_STATUS);
 
