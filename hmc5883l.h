@@ -287,7 +287,7 @@ inline void hmc5883l_set_gain(HMC5883L *hmc5883l, unsigned char gain) {
 }
 
 
-/* Make a self test */
+/* Self test */
 inline char hmc5883l_self_test(HMC5883L *hmc5883l) {
     unsigned char passed = 0;
     unsigned int limit_low = 243,
