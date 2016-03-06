@@ -34,8 +34,8 @@
 #include <stdint.h>
 #include <string.h>
 #include <math.h>
-#include "../../lib/wiringPi/wiringPi/wiringPi.h"
-#include "../../lib/wiringPi/wiringPi/wiringPiI2C.h"
+#include <wiringPi.h>
+#include <wiringPiI2C.h>
 
 /* I2C address */
 #define HMC5883L_I2C_ADDRESS            0x1E
