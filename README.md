@@ -1,5 +1,5 @@
 # hmc5883l
-C header only library for the hmc5883l compass sensor on RaspberryPi
+C header only library for the hmc5883l magnetometer/compass sensor on RaspberryPi
 
 ### Requirements
 * wiringPi library: http://wiringpi.com/
